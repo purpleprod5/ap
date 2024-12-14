@@ -1,0 +1,138 @@
+body {
+    margin: 0px;
+    background-color: #0b162c;
+    color: aliceblue;
+}
+
+main {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    height: 110px;
+}
+
+.navdiv {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    justify-content: center;
+    flex-basis: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    width: 5.78%;
+    height: 100%;
+}
+
+.imglogo {
+    max-width: 100%;
+    max-height: 100%
+}
+
+.itemNavbar {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    max-height: 100%;
+}
+
+.divPanier {
+    text-align: left;
+    float: left;
+}
+
+.panier {
+    background-color: #3b556d;
+    border-color: #5FC2BA;
+}
+
+
+
+.upNavbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 50%;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+.nomentreprise {
+    display: flex;
+    justify-content: center;
+}
+
+.downNavbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 50%;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.bouttongéné {
+    height: 35px;
+    background-color: #3b556d;
+    border-radius: 0px;
+    border-color: #5FC2BA;
+    color: antiquewhite;
+    width: 100%;
+    border-top: none;
+    border-bottom: none;
+}
+
+.textboutton {
+    color: aliceblue;
+}
+
+.imgdéroulante {
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 10;
+    transition: left 0s 0.75s;
+}
+
+.attache_img_déroulante:checked + .imgdéroulante {
+    left: 0;
+    z-index: 100;
+    transition: left 0.65s ease-out;
+}
+
+.nomnews  label:hover, .nomnews label:focus  {
+    background: #1c87c9;
+}
+
+.nomnews {
+    position: absolute;
+    left: 0;
+    z-index: 11;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+}
+
+.news {
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+    height: 350px;
+    overflow: hidden;
+}
+
+.imgnews img {
+    max-width: 100%;
+}
